@@ -51,7 +51,7 @@ if 'hf_token' in st.session_state:
 
 
 st.set_page_config(
-    page_title="Talk with evrythings💬", page_icon="🤗", layout="wide", initial_sidebar_state="expanded"
+    page_title="AI Powered Chat💬 - with everything", page_icon="🤗", layout="wide", initial_sidebar_state="expanded"
 )
 
 st.markdown('<style>.css-w770g5{\
@@ -71,7 +71,7 @@ st.markdown('<style>.css-w770g5{\
 
 # Sidebar contents for logIN, choose plugin, and export chat
 with st.sidebar:
-    st.title('🤗💬 PersonalChat App')
+    st.title('💬 Personal AI')
     
     if 'hf_email' not in st.session_state or 'hf_pass' not in st.session_state:
         with st.expander("ℹ️ Login in Hugging Face", expanded=True):
@@ -726,10 +726,10 @@ with st.sidebar:
 
     export_chat()
     add_vertical_space(5)
-    html_chat = '<center><h6>🤗 Support the project with a donation for the development of new features 🤗</h6>'
-    html_chat += '<br><a href="https://rebrand.ly/SupportAUTOGPTfree"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donate button" /></a><center><br>'
+    html_chat = '<center><h6>Support the project with a donation for the development of new features </h6>'
+    html_chat += '<br><a href="https://kurator.ai">Kurator.ai</a><center><br>'
     st.markdown(html_chat, unsafe_allow_html=True)
-    st.write('Made with ❤️ by [Alessandro CIciarelli](https://intelligenzaartificialeitalia.net)')
+    st.write('Made with ❤️ by RapidAgent.ai')
 
 ##### End of sidebar
 

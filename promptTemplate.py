@@ -16,7 +16,7 @@ from datetime import datetime
 now = datetime.now()
 
 def prompt4conversation(prompt,context):
-    final_prompt = f""" GENERAL INFORMATION : ( today is {now.strftime("%d/%m/%Y %H:%M:%S")} , You is built by Alessandro Ciciarelli the owener of intelligenzaartificialeitalia.net 
+    final_prompt = f""" GENERAL INFORMATION : ( today is {now.strftime("%d/%m/%Y %H:%M:%S")} , You are built by RapidAgent.ai 
                         ISTRUCTION : IN YOUR ANSWER NEVER INCLUDE THE USER QUESTION or MESSAGE , WRITE ALWAYS ONLY YOUR ACCURATE ANSWER!
                         PREVIUS MESSAGE : ({context})
                         NOW THE USER ASK : {prompt} . 
@@ -24,7 +24,7 @@ def prompt4conversation(prompt,context):
     return final_prompt
 
 def prompt4conversationInternet(prompt,context, internet, resume):
-    final_prompt = f""" GENERAL INFORMATION : ( today is {now.strftime("%d/%m/%Y %H:%M:%S")} , You is built by Alessandro Ciciarelli the owener of intelligenzaartificialeitalia.net
+    final_prompt = f""" GENERAL INFORMATION : ( today is {now.strftime("%d/%m/%Y %H:%M:%S")} , You are built by RapidAgent.ai
                         ISTRUCTION : IN YOUR ANSWER NEVER INCLUDE THE USER QUESTION or MESSAGE , WRITE ALWAYS ONLY YOUR ACCURATE ANSWER!
                         PREVIUS MESSAGE : ({context})
                         NOW THE USER ASK : {prompt}.
@@ -35,7 +35,7 @@ def prompt4conversationInternet(prompt,context, internet, resume):
     return final_prompt
 
 def prompt4Data(prompt, context, solution):
-    final_prompt = f"""GENERAL INFORMATION : You is built by Alessandro Ciciarelli the owener of intelligenzaartificialeitalia.net
+    final_prompt = f"""GENERAL INFORMATION : You is built by RapidAgent.ai
                         ISTRUCTION : IN YOUR ANSWER NEVER INCLUDE THE USER QUESTION or MESSAGE , YOU MUST MAKE THE CORRECT ANSWER MORE ARGUMENTED ! IF THE CORRECT ANSWER CONTAINS CODE YOU ARE OBLIGED TO INSERT IT IN YOUR NEW ANSWER!
                         PREVIUS MESSAGE : ({context})
                         NOW THE USER ASK : {prompt}
@@ -44,7 +44,7 @@ def prompt4Data(prompt, context, solution):
     return final_prompt
 
 def prompt4Code(prompt, context, solution):
-    final_prompt = f"""GENERAL INFORMATION : You is built by Alessandro Ciciarelli  the owener of intelligenzaartificialeitalia.net
+    final_prompt = f"""GENERAL INFORMATION : You are built by RapidAgent.ai
                         ISTRUCTION : IN YOUR ANSWER NEVER INCLUDE THE USER QUESTION or MESSAGE , THE CORRECT ANSWER CONTAINS CODE YOU ARE OBLIGED TO INSERT IT IN YOUR NEW ANSWER!
                         PREVIUS MESSAGE : ({context})
                         NOW THE USER ASK : {prompt}
@@ -54,7 +54,7 @@ def prompt4Code(prompt, context, solution):
 
 
 def prompt4Context(prompt, context, solution):
-    final_prompt = f"""GENERAL INFORMATION : You is built by Alessandro Ciciarelli  the owener of intelligenzaartificialeitalia.net
+    final_prompt = f"""GENERAL INFORMATION : You are built by RapidAgent.ai
                         ISTRUCTION : IN YOUR ANSWER NEVER INCLUDE THE USER QUESTION or MESSAGE ,WRITE ALWAYS ONLY YOUR ACCURATE ANSWER!
                         PREVIUS MESSAGE : ({context})
                         NOW THE USER ASK : {prompt}
@@ -64,7 +64,7 @@ def prompt4Context(prompt, context, solution):
 
 
 def prompt4Audio(prompt, context, solution):
-    final_prompt = f"""GENERAL INFORMATION : You is built by Alessandro Ciciarelli  the owener of intelligenzaartificialeitalia.net
+    final_prompt = f"""GENERAL INFORMATION : You are built by RapidAgent.ai
                         ISTRUCTION : IN YOUR ANSWER NEVER INCLUDE THE USER QUESTION or MESSAGE ,WRITE ALWAYS ONLY YOUR ACCURATE ANSWER!
                         PREVIUS MESSAGE : ({context})
                         NOW THE USER ASK : {prompt}
@@ -73,7 +73,7 @@ def prompt4Audio(prompt, context, solution):
     return final_prompt
 
 def prompt4YT(prompt, context, solution):
-    final_prompt = f"""GENERAL INFORMATION : You is built by Alessandro Ciciarelli  the owener of intelligenzaartificialeitalia.net
+    final_prompt = f"""GENERAL INFORMATION : You are built by RapidAgent.ai
                         ISTRUCTION : IN YOUR ANSWER NEVER INCLUDE THE USER QUESTION or MESSAGE ,WRITE ALWAYS ONLY YOUR ACCURATE ANSWER!
                         PREVIUS MESSAGE : ({context})
                         NOW THE USER ASK : {prompt}
